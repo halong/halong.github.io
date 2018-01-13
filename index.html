@@ -48,9 +48,9 @@
       </nav>
       <nav id="sub-nav">
         
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSSフィード"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Suche"></a>
+        <a id="nav-search-btn" class="nav-icon" title="検索"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
@@ -97,13 +97,17 @@
 <li>在最后面添加：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repository: git@github.com:halong/halong.github.io.git</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<p>注意：冒号后面加个空格<br>-依次执行:hexo clean   清理cache<br>           hexo d -g   将Markdown文件快速的生成静态网页并部署到github上</p>
-<h3 id="发布博客"><a href="#发布博客" class="headerlink" title="发布博客"></a>发布博客</h3><p>将Markdown文件放到\source_posts里 然后执行：hexo d -g即可</p>
+<p>注意：冒号后面加个空格</p>
+<ul>
+<li>依次执行:hexo clean   清理cache<pre><code>hexo d -g   将Markdown文件快速的生成静态网页并部署到github上
+</code></pre></li>
+</ul>
+<h3 id="发布博客"><a href="#发布博客" class="headerlink" title="发布博客"></a>发布博客</h3><p>将Markdown文件放到\source_posts里 然后执行：hexo d -g即可<br>注意：Markdown文件的标题格式：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: Hello World</span><br><span class="line">---</span><br></pre></td></tr></table></figure></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/01/13/使用hexo生成博客网站/" data-id="cjcd681lx0000ako65nr7l2va" class="article-share-link">Teilen</a>
+      <a data-url="http://yoursite.com/2018/01/13/使用hexo生成博客网站/" data-id="cjcd681lx0000ako65nr7l2va" class="article-share-link">共有</a>
       
       
     </footer>
@@ -151,7 +155,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/01/10/hello-world/" data-id="cjca64wld000048o68btq361s" class="article-share-link">Teilen</a>
+      <a data-url="http://yoursite.com/2018/01/10/hello-world/" data-id="cjca64wld000048o68btq361s" class="article-share-link">共有</a>
       
       
     </footer>
@@ -177,7 +181,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Archiv</h3>
+    <h3 class="widget-title">アーカイブ</h3>
     <div class="widget">
       <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/">January 2018</a></li></ul>
     </div>
@@ -187,7 +191,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">letzter Beitrag</h3>
+    <h3 class="widget-title">最近の投稿</h3>
     <div class="widget">
       <ul>
         
