@@ -1,0 +1,22 @@
+@charset "utf-8";
+/* CSS Document */
+html,body,div{
+	margin:0px;
+	padding:0px;
+}
+.divbox{
+	height:500px;
+	background:yellow;
+}
+#left{
+	float:left;
+	width:200px;
+	height:100%;
+	background:red;
+}
+.right{
+	width:auto;
+	height:100%;
+	background:black;
+}
+
