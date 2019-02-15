@@ -1,0 +1,10 @@
+mingw工具包下载地址：http://image.jthinking.com/software/mingw-w64.zip
+
+
+mingw环境配置：一定要在系统变量path后添加--MinGW的安装目录/bin
+
+
+mingw配置成功检测：运行--CMD-- gcc -v
+
+
+eclipse运行：1-安装CDT   2-新建的c/cpp项目要先右击选择Build Project,再run local application.这里最关键
