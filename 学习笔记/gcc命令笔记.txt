@@ -8,7 +8,7 @@ a   //执行a.exe
 //分解过程：  -o 指定输出文件名out 其中 .exe可省略
 gcc -E a.c -o a.i  //预编译(处理宏定义和include，删除注释..)
 gcc -S a.i -o a.s  //检查语法，生成汇编代码   
-gcc -c a.s -o a.o  //汇编成目标文件  编译汇编代码从这里开始
+gcc -c a.s -o a.o  //汇编成目标文件 也就是二进制文件
 gcc a.o -o a    //链接成可执行文件
 
 
