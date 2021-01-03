@@ -1,0 +1,49 @@
+public List<Music> getDataFromContent() {
+		List<Music> musics = new ArrayList<Music>();
+		// 下面的命令将返回所有在外部存储卡上的音乐文件的信息：
+		Cursor cursor = getContentResolver().query(
+				MediaStore.Audio.Media.EXTERNAL_CONTENT_URI, null, null, null,
+				MediaStore.Audio.Media.DEFAULT_SORT_ORDER);
+		// 得到cursor后，我们可以调用Cursor的相关方法具体的音乐信息：
+		while (cursor.moveToNext()) {
+			Music music = new Music();
+			// 歌曲ID：MediaStore.Audio.Media._ID
+			music.id = cursor.getInt(cursor
+					.getColumnIndexOrThrow(MediaStore.Audio.Media._ID));
+			// 歌曲的名称：MediaStore.Audio.Media.TITLE
+			music.title = cursor.getString(cursor
+					.getColumnIndexOrThrow(MediaStore.Audio.Media.TITLE));
+			// 歌曲的专辑名：MediaStore.Audio.Media.ALBUM
+			music.album = cursor.getString(cursor
+					.getColumnIndexOrThrow(MediaStore.Audio.Media.ALBUM));
+
+			// 歌曲的歌手名：MediaStore.Audio.Media.ARTIST
+			music.artist = cursor.getString(cursor
+					.getColumnIndexOrThrow(MediaStore.Audio.Media.ARTIST));
+
+			// 歌曲文件的路径：MediaStore.Audio.Media.DATA
+			music.url = cursor.getString(cursor
+					.getColumnIndexOrThrow(MediaStore.Audio.Media.DATA));
+			// 歌曲的总播放时长：MediaStore.Audio.Media.DURATION
+			music.duration = cursor.getInt(cursor
+					.getColumnIndexOrThrow(MediaStore.Audio.Media.DURATION));
+			// 歌曲文件的大小：MediaStore.Audio.Media.SIZE
+			music.size = cursor.getLong(cursor
+					.getColumnIndexOrThrow(MediaStore.Audio.Media.SIZE));
+
+			// Log.e("TAG", music.title);
+
+			musics.add(music);
+		}
+		return musics;
+	}
+
+	public class Music {
+		int id;
+		String title;
+		String album;
+		String artist;
+		String url;
+		int duration;
+		Long size;
+	}

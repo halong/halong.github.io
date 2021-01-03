@@ -1,0 +1,8 @@
+1,应用数据：聚合数据
+2,应用后台：Bmob
+3,图片加载：Picasso
+4,上拉刷新下拉加载：Android-PullToRefresh
+5,圆形头像：android-shape-imageview
+7,短信验证码：Mob SMSSDK
+8,分享功能:Mob ShareSDK
+

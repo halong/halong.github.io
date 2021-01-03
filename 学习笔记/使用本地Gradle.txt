@@ -1,0 +1,3 @@
+# android studio使用本地gradle
+
+1,file->setting->gradle->use gradle from : specified location
