@@ -1,9 +1,0 @@
-https://api.douban.com/v2/book/search?q=金瓶梅
-
-http://www.sojson.com/open/api/weather/json.shtml?city=北京 //天气api
-
-http://tingapi.ting.baidu.com/v1/restserver/ting?from=webapp_music&method=baidu.ting.search.catalogSug&format=json
-
-http://tingapi.ting.baidu.com/v1/restserver/ting?from=webapp_music&method=baidu.ting.billboard.billList
-
-http://gc.ditu.aliyun.com/geocoding?a=上海市&aa=松江区&aaa=车墩镇  //获取经纬度
