@@ -26,35 +26,15 @@ navigation:
     url: /tags.html
   - name: 分类
     url: /categories.html
-  - name: 关于
-    url: /about.html
 
 # Pagination
 paginate: 20
 
-# Includes an icon in the footer for each username you enter
-footer-links:
-  behance: # https://www.behance.net/<username>
-  dribbble:
-  email: terminus2049@protonmail.com
-  facebook:
-  flickr:
-  github: TerminusBot/terminus-jekyll-template
-  googleplus: # anything in your profile username that comes after plus.google.com/
-  instagram:
-  linkedin:
-  telegram: terminus_9402
-  pinterest:
-  rss: atom.xml # just type anything here for a working RSS icon
-  stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
-  tumblr: # https://<username>.tumblr.com
-  twitter: 2049bbs
-  youtube: # channel/<your_long_string> or user/<user-name>
 
 # Text under the icons in footer
 footer-text: Powered by <a href="https://github.com/TerminusBot/terminus-jekyll-template">TerminusBot</a>
 
-# Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
+# Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.com)
 # Used for Sitemap.xml and your RSS feed
 url: https://halong.github.io/
 
