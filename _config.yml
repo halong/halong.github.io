@@ -6,7 +6,7 @@
 name: 哈龙的博客
 
 # Short bio or description (displayed in the header)
-description: 这是哈龙的个人网站
+description: 这是哈龙的个人博客网站
 
 #
 # Flags below are optional
@@ -27,7 +27,7 @@ navigation:
   - name: 分类
     url: /categories.html
 
-# Pagination
+# Pagination 页码数
 paginate: 20
 
 
