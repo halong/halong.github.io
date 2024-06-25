@@ -1,0 +1,2 @@
+# idea gradle无法新建class
+file->Project Structure->选中对应module 的Java文件夹 右击 选择source

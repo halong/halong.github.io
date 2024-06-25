@@ -1,0 +1,2 @@
+# idea配置gradle
+file->setting->Gradle->use gradle from 选中specified location

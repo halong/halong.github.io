@@ -1,0 +1,26 @@
+@Ubuntu 创建.txt文本文件： 
+   *sudo不是随便用的
+   1.打开终端并输入 vim xxx.txt
+   2.按esc，输入:wq!
+
+@Ubuntu安装jdk：
+    1.下载jdk,eg:jdk-8u171-linux-x64.tar.gz
+    2.解压jdk,$ tar -zxvf jdk-8u171-linux-x64.tar.gz
+    3.打开配置环境文件，$gedit ~/.bashrc   //千万不要加sudo
+    4.输入配置：
+         export JAVA_HOME=~/jdk  
+         export JRE_HOME=${JAVA_HOME}/jre  
+         export CLASSPATH=.:${JAVA_HOME}/lib:${JRE_HOME}/lib  
+         export PATH=${JAVA_HOME}/bin:$PATH
+     保存退出
+     5.生效配置文件，$source ~/.bashrc   
+       echo $PATH //查看当前PATH的配置路径
+     6.验证，$java -version
+
+@Failed to load module "canberra-gtk-module"
+  sudo apt-get install libcanberra-gtk-module
+
+
+@安装git
+sudo apt-get update 
+sudo apt-get install git

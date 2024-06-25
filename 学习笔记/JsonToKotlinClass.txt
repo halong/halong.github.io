@@ -1,0 +1,5 @@
+JsonToKotlinClass:Android Studio上将JSON转化成Kotlin Class的工具
+
+安装方法：File –> Settings –> Plugins –> Browse Repositories –>Search JsonToKotlinClass
+
+使用方法：在所要创建的文件夹上右击Generate class from JSON

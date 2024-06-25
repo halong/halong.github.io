@@ -1,0 +1,21 @@
+## Windows下Tomcat配置https
+
+1，打开控制台输入："%JAVA_HOME%\bin\keytool" -genkey -alias tomcat -keyalg RSA
+   密码设置为：123456 （密码自定）  其他随意  country 填 cn
+
+2，在Tomcat安装目录\conf\server.xml，
+
+在：
+<Connector port="8080" protocol="HTTP/1.1"
+               connectionTimeout="20000"
+               redirectPort="8443" />
+
+后面添加：
+   <Connector
+       protocol="org.apache.coyote.http11.Http11NioProtocol"
+       port="8443" maxThreads="200"
+       scheme="https" secure="true" SSLEnabled="true"
+       keystoreFile="${user.home}/.keystore" keystorePass="123456"
+       clientAuth="false" sslProtocol="TLS"/>
+	   
+3，双击 Tomcat安装目录\bin\startup.bat文件，打开Tomcat，浏览器输入：https://localhost:8443/ 验证成功
