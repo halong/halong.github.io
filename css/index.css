@@ -1,13 +1,13 @@
 html,body,div{
 	margin:0px;
 	padding:0px;
-	background:blue
+	background:white;
 }
-
 
 #left{
 	float:left;
 	width:auto;
+	height:auto;
 	background:red;
 }
 
